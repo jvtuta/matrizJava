@@ -6,11 +6,11 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Digite o número de rows: ");
+		System.out.print("Digite o nï¿½mero de rows: ");
 		int rows = sc.nextInt();
 		System.out.println();
 		
-		System.out.print("Digite o número de columns: ");
+		System.out.print("Digite o nï¿½mero de columns: ");
 		int columns = sc.nextInt();
 		System.out.println();
 		
@@ -20,15 +20,15 @@ public class Main {
 		
 		System.out.print("Digite o elemento selecionado dentro da lista: ");
 		int el  = sc.nextInt();
-		//getPositionOfElement deve ser executada primeiro porque o algoritmo depende da posição do elemento para definir as outras;
+		//getPositionOfElement deve ser executada primeiro porque o algoritmo depende da posiï¿½ï¿½o do elemento para definir as outras;
 		int positions = mtz.getPositionOfElement(el).size();
-		System.out.println("Posição do elemento selecionado: "+ mtz.getPositionOfElement(el));
+		System.out.println("Posiï¿½ï¿½o do elemento selecionado: "+ mtz.getPositionOfElement(el));
 		for(int i = 0; i < positions ; i+=2) {
 			System.out.println();
-			//Verificar se existe multíplas posições do elemento no array
-			System.out.println("Elemento à esquerda: "+ mtz.getLeftPositionOfElement());
+			//Verificar se existe multï¿½plas posiï¿½ï¿½es do elemento no array
+			System.out.println("Elemento a esquerda: "+ mtz.getLeftPositionOfElement());
 		
-			System.out.println("Elemento à direita: "+ mtz.getRightPositionOfElement());
+			System.out.println("Elemento a direita: "+ mtz.getRightPositionOfElement());
 		
 			System.out.println("Elemento no topo: "+ mtz.getTopPositionOfElement());
 		

@@ -53,7 +53,6 @@ public abstract class Position {
 	}
 	
 	public int getBottomPositionOfElement() {
-
 		int position = this.position.get(0) + 1;
 		int column = this.position.get(1);
 		if(position <= rows - 1) {
